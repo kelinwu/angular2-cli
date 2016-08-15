@@ -30,7 +30,6 @@ export class GithubComponent implements OnInit {
 
         this._githubService.getUser().subscribe(user => {
             this.user = user;
-            console.log(user);
         });
 
         this._githubService.getRepos().subscribe(repos => {
